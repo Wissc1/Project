@@ -1,0 +1,23 @@
+/* Draw a line in the middle of the screen vertically */
+var line = document.createElement('div');
+line.style.width = '1px';
+line.style.height = '100%';
+line.style.backgroundColor = 'black';
+line.style.position = 'absolute';
+line.style.left = '50%';
+document.body.appendChild(line);
+/* Separate the screen in 2 sides verically */
+var left = document.createElement('div');
+left.style.width = '50%';
+left.style.height = '100%';
+left.style.position = 'absolute';
+left.style.left = '0';
+left.style.backgroundColor = 'red';
+document.body.appendChild(left);
+var right = document.createElement('div');
+right.style.width = '50%';
+right.style.height = '100%';
+right.style.position = 'absolute';
+right.style.left = '50%';
+right.style.backgroundColor = 'blue';
+document.body.appendChild(right);
